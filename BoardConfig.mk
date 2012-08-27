@@ -24,9 +24,6 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/moto/xt897/BoardConfigVendor.mk
 
-# Bootloader
-TARGET_NO_BOOTLOADER := true
-
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
@@ -77,4 +74,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_PREBUILT_KERNEL := device/moto/xt897/kernel
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+
+#TWRP
+DEVICE_RESOLUTION := 540x960
 
