@@ -15,7 +15,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_KERNEL):kernel \
+    device/samsung/d2spr/apns-conf.xml:system/etc/apns-conf.xml
 
 $(call inherit-product, build/target/product/full.mk)
 
