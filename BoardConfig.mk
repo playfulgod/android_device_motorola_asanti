@@ -22,7 +22,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/moto/xt897/BoardConfigVendor.mk
+-include vendor/moto/asanti/BoardConfigVendor.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
@@ -35,7 +35,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HAVE_NEON := true
-TARGET_BOOTLOADER_BOARD_NAME := xt897
+TARGET_BOOTLOADER_BOARD_NAME := asanti
 
 # Enable WEBGL in WebKit
 ENABLE_WEBGL := true
@@ -59,7 +59,10 @@ TARGET_KRAIT_BIONIC_BBTHRESH := 64
 TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := xt897
+TARGET_OTA_ASSERT_DEVICE := xt897, asanti
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH=true
 
 # NFC
 BOARD_HAVE_NFC := true
@@ -71,9 +74,9 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_PREBUILT_KERNEL := device/moto/xt897/kernel
-
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+TARGET_PREBUILT_KERNEL := device/moto/asanti/kernel
+BOARD_HAS_NO_SELECT_BUTTON := true
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
 #TWRP
 DEVICE_RESOLUTION := 540x960
