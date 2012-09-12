@@ -8,7 +8,7 @@ $(call inherit-product, vendor/cm/config/cdma.mk)
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/moto/asanti/device_asanti.mk)
+$(call inherit-product, device/motorola/asanti/device_asanti.mk)
 
 TARGET_BOOTANIMATION_NAME := vertical-540x960
 

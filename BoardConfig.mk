@@ -22,7 +22,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/moto/asanti/BoardConfigVendor.mk
+-include vendor/motorola/asanti/BoardConfigVendor.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
@@ -74,7 +74,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_PREBUILT_KERNEL := device/moto/asanti/kernel
+TARGET_PREBUILT_KERNEL := device/motorola/asanti/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
