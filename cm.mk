@@ -15,6 +15,6 @@ TARGET_BOOTANIMATION_NAME := vertical-540x960
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := asanti
 PRODUCT_NAME := cm_asanti
-PRODUCT_BRAND := moto
+PRODUCT_BRAND := motorola
 PRODUCT_MODEL := asanti
-PRODUCT_MANUFACTURER := moto
+PRODUCT_MANUFACTURER := motorola
